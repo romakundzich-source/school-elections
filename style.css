@@ -1,0 +1,119 @@
+/* ФОН + ОФІЦІЙНИЙ ВИГЛЯД */
+body {
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(10,118,216,0.22),
+      rgba(26,157,75,0.22)
+    ),
+    url("school.png");
+}
+
+/* Заголовки */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Голосування */
+.voting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.8rem;
+
+  background: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #1a9d4b;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.voting-link {
+  background: #1a9d4b;
+  color: #fff;
+  padding: .7rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Вкладки */
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+.tab {
+  padding: .6rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e5e7eb;
+  font-weight: bold;
+}
+.tab.active {
+  background: #0a76d8;
+  color: #fff;
+}
+
+/* Контент */
+.content {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* Кандидат */
+.candidate {
+  display: none;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  border-left: 6px solid #0a76d8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.candidate.active {
+  display: block;
+}
+.candidate h2 {
+  color: #0a76d8;
+  font-size: 1.6rem;
+}
+
+/* Інфо */
+.info {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: .8rem 1rem;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+/* Опис */
+.candidate p {
+  line-height: 1.6;
+}
+
+/* Кнопка */
+.file-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: #0a76d8;
+  color: #fff;
+  padding: .6rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.file-link:hover {
+  background: #064a8a;
+}
