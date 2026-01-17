@@ -1,27 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Вибори президента ліцею</title>
+  <title>Вибори на посаду президента ліцею</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <h1 class="title">Вибори президента ліцею</h1>
-  <p class="subtitle">Агітаційні матеріали кандидатів</p>
+<div class="overlay">
 
-  <!-- БЛОК ГОЛОСУВАННЯ -->
-  <div class="voting">
-    <p class="voting-text">🗳️ <strong>Голосування для учнів та вчителів</strong></p>
+  <h1 class="main-title">Вибори на посаду президента ліцею</h1>
 
-    <!-- СЮДИ ВСТАВИШ ПОСИЛАННЯ -->
-    <a href="ПОСИЛАННЯ_НА_ГОЛОСУВАННЯ" target="_blank" class="voting-link">
-      Перейти до голосування
-    </a>
+  <!-- Голосування -->
+  <div class="voting-box">
+    <h2>Обери гідного кандидата!</h2>
+    <div class="voting-buttons">
+      <a href="ПОСИЛАННЯ_ДЛЯ_ВЧИТЕЛІВ" class="vote-btn teachers">
+        Голосування для вчителів
+      </a>
+      <a href="ПОСИЛАННЯ_ДЛЯ_УЧНІВ" class="vote-btn students">
+        Голосування для учнів
+      </a>
+    </div>
   </div>
 
-  <!-- ВКЛАДКИ -->
+  <h2 class="campaign-title">Агітаційні матеріали кандидатів</h2>
+
+  <!-- Вкладки -->
   <div class="tabs">
     <button class="tab active" onclick="openCandidate(0)">Кандидат 1</button>
     <button class="tab" onclick="openCandidate(1)">Кандидат 2</button>
@@ -35,132 +40,107 @@
 
   <div class="content">
 
-    <!-- КАНДИДАТ 1 -->
+    <!-- 1 -->
     <div class="candidate active">
       <h2>Чорна Віталіна Олександрівна</h2>
-
       <div class="info">
-        <span><strong>Клас:</strong> 7-А</span>
-        <span><strong>Статус:</strong> кандидат у президенти</span>
+        <span>Клас: 7-А</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
-
-      <p>
-        ТУТ РОЗМІЩУЄТЬСЯ ІНФОРМАЦІЯ ПРО КАНДИДАТА:
-        досвід в учнівському самоврядуванні, ідеї,
-        бачення розвитку школи, мотивація.
-      </p>
-
-      <a href="ПОСИЛАННЯ_НА_ПРЕЗЕНТАЦІЮ" target="_blank" class="file-link">
-        Переглянути передвиборчу програму
-      </a>
+      <p>ТУТ РОЗМІЩУЄТЬСЯ ІНФОРМАЦІЯ ПРО КАНДИДАТА</p>
+      <a href="#" class="file-link">Передвиборча програма</a>
     </div>
 
-    <!-- КАНДИДАТ 2 -->
+    <!-- 2 -->
     <div class="candidate">
       <h2>Свідерська Софія Дмитрівна</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 7-Б</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 7-Б</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
-      <p>ОПИС КАНДИДАТА ТА ЙОГО ІДЕЙ</p>
+      <p>Якщо звичайна дівчина – загадка, то я – супер секретна державна таємниця!</p>
       <a href="#" class="file-link">Передвиборча програма</a>
     </div>
 
-    <!-- КАНДИДАТ 3 -->
+    <!-- 3 -->
     <div class="candidate">
       <h2>Волкотруб Катерина Русланівна</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 7-В</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 7-В</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
-      <p>Зі мною школа засяє новими фарбами. 
-          Твій голос - твій вибір!</p>
+      <p>Зі мною школа засяє новими фарбами. Твій голос — твій вибір!</p>
       <a href="#" class="file-link">Передвиборча програма</a>
     </div>
-      <!-- КАНДИДАТ 4 -->
+
+    <!-- 4 -->
     <div class="candidate">
       <h2>Вехбе Ахмад Махмуд</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 7-Г</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 7-Г</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
       <p>ОПИС КАНДИДАТА ТА ЙОГО ІДЕЙ</p>
       <a href="#" class="file-link">Передвиборча програма</a>
     </div>
-      <!-- КАНДИДАТ 5 -->
+
+    <!-- 5 -->
     <div class="candidate">
       <h2>Гречковська Альона Олегівна</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 8-А</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 8-А</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
       <p>ОПИС КАНДИДАТА ТА ЙОГО ІДЕЙ</p>
       <a href="#" class="file-link">Передвиборча програма</a>
     </div>
-      <!-- КАНДИДАТ 6 -->
+
+    <!-- 6 -->
     <div class="candidate">
       <h2>Хавтірко Денис В'ячеславович</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 8-Б</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 8-Б</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
       <p>ОПИС КАНДИДАТА ТА ЙОГО ІДЕЙ</p>
-              <a href="programes/candidate6.jpg" target="_blank" class="file-link">
-  Переглянути постер
-</a>
+      <a href="programes/candidate6.jpg" target="_blank" class="file-link">
+        Переглянути постер
+      </a>
     </div>
-<!-- КАНДИДАТ 7 -->
+
+    <!-- 7 -->
     <div class="candidate">
       <h2>Базюк Анастасія Анатоліївна</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 8-В</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 8-В</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
       <p>Завжди залишайся людиною</p>
-      <a href="programes/candidate7.jpg" target="_blank" class="file-link">
-  Переглянути постер
-</a>
-        <a href="programes/candidate7_1.pdf" target="_blank" class="file-link">
-  Переглянути передвиборчу програму
-</a>
+      <a href="programes/candidate7.jpg" target="_blank" class="file-link">Постер</a>
+      <a href="programes/candidate7_1.pdf" target="_blank" class="file-link">Програма</a>
     </div>
-  <!-- КАНДИДАТ 8 -->
+
+    <!-- 8 -->
     <div class="candidate">
       <h2>Логоша Ульяна Романівна</h2>
       <div class="info">
-        <span><strong>Клас:</strong> 8-Г</span>
-        <span><strong>Статус:</strong> кандидат в президенти</span>
+        <span>Клас: 8-Г</span>
+        <span>Статус: кандидат у президенти</span>
       </div>
       <p>ОПИС КАНДИДАТА ТА ЙОГО ІДЕЙ</p>
-      <a href="programes/candidate8.pptx" target="_blank" class="file-link">
-  Переглянути передвиборчу програму
-</a>
-        <a href="programes/candidate8_1.pdf" target="_blank" class="file-link">
-  Переглянути постер
-</a>
-        <a href="programes/candidate8_4.png" target="_blank" class="file-link">
-  Переглянути брошуру 1
-</a>
-        <a href="programes/candidate8_3.png" target="_blank" class="file-link">
-  Переглянути брошуру 2
-</a>
+      <a href="programes/candidate8.pptx" class="file-link">Програма</a>
+      <a href="programes/candidate8_1.pdf" class="file-link">Постер</a>
+      <a href="programes/candidate8_4.png" class="file-link">Брошура 1</a>
+      <a href="programes/candidate8_3.png" class="file-link">Брошура 2</a>
     </div>
 
-<script>
-  function openCandidate(index) {
-    const candidates = document.querySelectorAll(".candidate");
-    const tabs = document.querySelectorAll(".tab");
+  </div>
+</div>
 
-    candidates.forEach(c => c.classList.remove("active"));
-    tabs.forEach(t => t.classList.remove("active"));
-
-    candidates[index].classList.add("active");
-    tabs[index].classList.add("active");
-  }
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
 
 
 
